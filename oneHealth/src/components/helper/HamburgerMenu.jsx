@@ -45,7 +45,7 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
         <img src={close} onClick={() => setMenuOpen(false)} className="absolute top-10 right-10 text-2xl w-5" />
 
         {/* Links */}
-        <nav className="flex flex-col space-y-4 font-roboto text-primary text-xl items-center">
+        <nav className="flex flex-col space-y-4 font-roboto text-primary text-2xl items-center gap-6">
           <div className="dark:text-white hover:underline">About</div>
           <div className="dark:text-white hover:underline">Service</div>
           <div className="dark:text-white hover:underline">Benefits</div>

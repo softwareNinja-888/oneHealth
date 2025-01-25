@@ -1,11 +1,15 @@
 import { Header } from "@components/Header"
 import './index.css'
+import { Hero } from "./components/Hero"
 
 function App() {
  
   return (
     <>
-      <Header/>
+      <div className="">
+        <Header/>
+        <Hero/>
+      </div>
     </>
   )
 }
