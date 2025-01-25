@@ -1,8 +1,8 @@
-export function BulletPoint({ color = "black", size = "8px" }) {
+export function BulletPoint({ color = "primary", size = "8px" }) {
   return (
     <span
-      className="inline-block rounded-full"
-      style={{ backgroundColor: color, width: size, height: size }}
+      className={`inline-block rounded-full bg-${color}`}
+      style={{  width: size, height: size }}
     ></span>
   );
 }
