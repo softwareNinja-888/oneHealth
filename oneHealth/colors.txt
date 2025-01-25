@@ -1,0 +1,42 @@
+pri- #275f49
+sec- #e4f2d4
+
+other - #dcd9fe (purple)
+other- #f3f2ed (light)
+
+
+svg
+	<svg preserveAspectRatio="none" data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="presentation" aria-hidden="true" aria-label="">
+    <g>
+        <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z"></path>
+    </g>
+</svg>
+hand\
+
+
+<svg preserveAspectRatio="none" data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="presentation" aria-hidden="true" aria-label="">
+    <g>
+        <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z"></path>
+    </g>
+</svg>
+
+<svg preserveAspectRatio="none" data-bbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="presentation" aria-hidden="true" aria-label="">
+    <g>
+        <path d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100z"></path>
+    </g>
+</svg>
+
+font implement 
+
+
+data/
+
+resolve: {
+    alias: {
+      '@data': path.resolve(__dirname, 'src/data'),
+    },
+  },
+menu
+
+ <img src={theme === 'light' ? menuLight : menuDark} onClick={() => setMenuOpen(!menuOpen)} className="w-5" />
+            	    {menuOpen && <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
