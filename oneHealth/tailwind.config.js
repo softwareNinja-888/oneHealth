@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [],
@@ -14,6 +15,7 @@ export default {
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
+      scale: 'scale 2s ease-in-out infinite'
     },
     aria: {
       busy: 'busy="true"',
@@ -594,6 +596,15 @@ export default {
           animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
         },
       },
+      scale: {
+        '0%, 100%': {
+          transform: 'scale(1)',
+        },
+        '50%': {
+          transform: 'scale(2)',
+        }
+      },
+
     },
     letterSpacing: {
       tighter: '-0.05em',
