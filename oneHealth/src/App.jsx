@@ -7,7 +7,7 @@ import { Benefits } from "./components/Benefits"
 import { Team } from "./components/Team"
 import { Testimonials } from "./components/Testimonials"
 import { Footer } from "./components/Footer"
-
+import { ScrollToTop } from "./components/helper/ScrollToTop"
 function App() {
  
   return (
@@ -21,6 +21,7 @@ function App() {
         <Team/>
         <Testimonials/>
         <Footer/>
+        <ScrollToTop/>
       </div>
     </>
   )

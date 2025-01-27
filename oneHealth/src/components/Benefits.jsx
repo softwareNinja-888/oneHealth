@@ -8,7 +8,7 @@ import { SectionIntro } from "./helper/SectionIntro";
 export function Benefits(){
     return (
         <>
-            <div className="flex flex-col gap-20 px-5 py-20 bg-primary">
+            <div id="benefits" className="flex flex-col gap-20 px-5 py-20 bg-primary">
                 <div className="flex flex-col gap-8 text-secondary">
                     <SectionIntro header={<Button text="Benefits" bg="bg-secondary" color="text-primary" width="w-52" fntSize="text-2xl"/>} name='Why We Stand Out' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, expedita voluptates corrupti deserunt autem laudantium rerum commodi nulla cum obcaecati consequatur magni minus explicabo culpa qui amet, ut enim ipsum.'/>
                    

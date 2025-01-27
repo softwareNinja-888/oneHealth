@@ -8,7 +8,7 @@ import surgery from '/surgery.avif'
 export function Services(){
     return (
         <>
-            <div className="bg-otherLight px-5 py-20 flex flex-col gap-10">
+            <div id="services" className="bg-otherLight px-5 py-20 flex flex-col gap-10">
                 <Button text="Our Services" bg="bg-primary" color="text-secondary" fntSize="text-xl" width="w-52"  />
                 <div className="font-lora text-3xl">Discover Our Services</div>
                 <div className="flex flex-col gap-16">

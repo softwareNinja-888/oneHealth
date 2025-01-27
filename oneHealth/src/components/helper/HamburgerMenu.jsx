@@ -21,6 +21,10 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
     },
   };
 
+  function handleClick(){
+    setMenuOpen(!menuOpen)
+  }
+
 
   return (
     <>
@@ -46,12 +50,12 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
 
         {/* Links */}
         <nav className="flex flex-col space-y-4 font-roboto text-primary text-2xl items-center gap-6">
-          <div className="dark:text-white hover:underline">About</div>
-          <div className="dark:text-white hover:underline">Service</div>
-          <div className="dark:text-white hover:underline">Benefits</div>
-          <div className="dark:text-white hover:underline">Meet the Team</div>
-          <div className='dark:text-white'>Testimonials</div>
-          <div className='dark:text-white'>Contact Form</div>
+          <a onClick={()=>{handleClick()}}href="#about"><div className=" hover:underline">About</div></a>
+          <a onClick={()=>{handleClick()}}href="#services"><div className=" hover:underline">Services</div></a>
+          <a onClick={()=>{handleClick()}}href="#benefits"><div className=" hover:underline">Benefits</div></a>
+          <a onClick={()=>{handleClick()}}href="#testimonials"><div className='hover:underline'>Testimonials</div></a>
+          <a onClick={()=>{handleClick()}}href="#contact"><div className='hover:underline'>Contact Form</div></a>
+          <a onClick={()=>{handleClick()}}href="#team"><div className=" hover:underline">Meet the Team</div></a>
         </nav>     
         </motion.div>
     </>

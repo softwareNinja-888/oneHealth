@@ -14,7 +14,7 @@ export function Hero(){
                     
                     <div className="mt-10" >
                         <a href="#contact">
-                            <Button text='Contact Us' bg='bg-primary' color='text-secondary' width='w-52' fntSize='text-2xl'/>
+                            <Button text='Contact Us' bg='bg-primary' color='text-secondary' width='w-52' fntSize='text-2xl' action={true} />
                         </a>
                     </div>
                 </div>
