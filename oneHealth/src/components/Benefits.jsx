@@ -7,12 +7,11 @@ import { BenefitCard } from "./helper/BenefitCard";
 export function Benefits(){
     return (
         <>
-            <div className="bg-primary">
-
-                <Button text="Benefits"/>
-                <div className="">
-                    <div className="">Why We Stand Out</div>
-                    <div className="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, expedita voluptates corrupti deserunt autem laudantium rerum commodi nulla cum obcaecati consequatur magni minus explicabo culpa qui amet, ut enim ipsum.</div>
+            <div className="flex flex-col gap-20 px-4 py-20 bg-primary">
+                <div className="flex flex-col gap-8 text-secondary">
+                    <Button text="Benefits" bg="bg-secondary" color="text-primary" width="w-32" fntSize="text-2xl"/>
+                    <div className="text-3xl font-lora">Why We Stand Out</div>
+                    <div className="text-lg font-roboto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, expedita voluptates corrupti deserunt autem laudantium rerum commodi nulla cum obcaecati consequatur magni minus explicabo culpa qui amet, ut enim ipsum.</div>
                 </div>
                 <div className="flex flex-col gap-28">
                     <BenefitCard img={charity} color='bg-otherPurple' name='Compassionate Care' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ab mollitia accusantium distinctio iusto qui perspiciatis architecto earum dicta, dignissimos similique adipisci, reprehenderit cum velit repellendus ducimus praesentium, ad debitis?'/>
