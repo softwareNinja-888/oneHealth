@@ -1,10 +1,10 @@
-export function BenefitCard({img,color,name,text,position="start"}){
+export function BenefitCard({img,color,name,text,position="items-start"}){
 
     // FIND WAY TO DYNAMICALLY DISPLAY COLOR
 
     return (
         <>
-            <div className={`flex flex-col gap-10  items-${position}`}>
+            <div className={`flex flex-col gap-10 ${position}`}>
                 <div className={`flex justify-center w-28 h-28 ${color} rounded-full p-3 `}>
                     <img src={img} alt="charity hands" className="" />
                 </div>
