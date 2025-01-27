@@ -3,6 +3,7 @@ import './index.css'
 import { Hero } from "./components/Hero"
 import { About } from "./components/About"
 import { Services } from "./components/Services"
+import { Benefits } from "./components/Benefits"
 
 function App() {
  
@@ -13,6 +14,7 @@ function App() {
         <Hero/>
         <About/>
         <Services/>
+        <Benefits/>
       </div>
     </>
   )

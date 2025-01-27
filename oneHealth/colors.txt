@@ -1,7 +1,7 @@
 pri- #275f49
 sec- #e4f2d4
 
-other - #dcd9fe (purple)
+other - #dcd9f7e (purple)
 other- #f3f2ed (light)
 
 
