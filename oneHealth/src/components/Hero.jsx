@@ -10,7 +10,7 @@ export function Hero(){
     return (
 
         <>
-            <div className="bg-secondary">
+            <div className="bg-secondary mt-32">
                 <div className="">
                     <img src={back} alt="background" className="w-screen h-92" />
                 </div>

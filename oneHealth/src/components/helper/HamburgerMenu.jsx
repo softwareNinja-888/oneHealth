@@ -1,5 +1,4 @@
 
-import React from "react";
 import close from '/ui/close.avif'
 
 import { motion } from "framer-motion";
@@ -21,16 +20,19 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
     },
   };
 
-  function handleClick(){
+  function handleClick(id){
+    const section = document.getElementById(id)
+    section ? window.scrollTo({top: section.offsetTop -120, behavior:"smooth"}) : null;
     setMenuOpen(!menuOpen)
   }
+
 
 
   return (
     <>
       {/* Background Overlay */}
       <motion.div
-        className="fixed inset-0  bg-opacity-100 z-40"
+        className="fixed inset-0  bg-opacity-100 z-100 "
         initial={{ opacity: 0 }}
         animate={{ opacity: menuOpen ? 1 : 0 }}
         transition={{ duration: 0.5 }}
@@ -40,7 +42,7 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
 
       {/* Animated Menu */}
       <motion.div
-        className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-secondary"
+        className="fixed inset-0 z-150 bg-secondary flex flex-col items-center justify-center h-screen w-screen"
         initial="closed"
         animate={menuOpen ? "open" : "closed"}
         variants={menuVariants}
@@ -49,13 +51,13 @@ export function HamburgerMenu({ menuOpen, setMenuOpen }){
         <img src={close} onClick={() => setMenuOpen(false)} className="absolute top-10 right-10 text-2xl w-5" />
 
         {/* Links */}
-        <nav className="flex flex-col space-y-4 font-roboto text-primary text-2xl items-center gap-6">
-          <a onClick={()=>{handleClick()}}href="#about"><div className=" hover:underline">About</div></a>
-          <a onClick={()=>{handleClick()}}href="#services"><div className=" hover:underline">Services</div></a>
-          <a onClick={()=>{handleClick()}}href="#benefits"><div className=" hover:underline">Benefits</div></a>
-          <a onClick={()=>{handleClick()}}href="#testimonials"><div className='hover:underline'>Testimonials</div></a>
-          <a onClick={()=>{handleClick()}}href="#contact"><div className='hover:underline'>Contact Form</div></a>
-          <a onClick={()=>{handleClick()}}href="#team"><div className=" hover:underline">Meet the Team</div></a>
+        <nav className="flex flex-col space-y-4 font-roboto text-primary text-2xl items-center gap-6">      
+          <div onClick={()=>{handleClick('about')}} className=" hover:underline">About</div>
+          <div onClick={()=>{handleClick('services')}} className=" hover:underline">Services</div>
+          <div onClick={()=>{handleClick('benefits')}} className=" hover:underline">Benefits</div>
+          <div onClick={()=>{handleClick('testimonials')}} className='hover:underline'>Testimonials</div>
+          <div onClick={()=>{handleClick('contact')}} className='hover:underline'>Contact Form</div>
+          <div onClick={()=>{handleClick('team')}} className=" hover:underline">Meet the Team</div>  
         </nav>     
         </motion.div>
     </>
