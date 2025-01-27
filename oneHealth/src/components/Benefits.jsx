@@ -9,9 +9,8 @@ export function Benefits(){
     return (
         <>
             <div id="benefits" className="flex flex-col gap-20 px-5 py-20 bg-primary">
-                <div className="flex flex-col gap-8 text-secondary">
+                <div className="flex flex-col gap-8 text-secondary lg:max-w-6/12">
                     <SectionIntro header={<Button text="Benefits" bg="bg-secondary" color="text-primary" width="w-52" fntSize="text-2xl"/>} name='Why We Stand Out' text='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, expedita voluptates corrupti deserunt autem laudantium rerum commodi nulla cum obcaecati consequatur magni minus explicabo culpa qui amet, ut enim ipsum.'/>
-                   
                 </div>
                 <div className="flex flex-col gap-28">
                     <BenefitCard img={charity} color='bg-otherPurple' name='Compassionate Care' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ab mollitia accusantium distinctio iusto qui perspiciatis architecto earum dicta, dignissimos similique adipisci, reprehenderit cum velit repellendus ducimus praesentium, ad debitis?'/>

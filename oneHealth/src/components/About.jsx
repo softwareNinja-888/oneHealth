@@ -7,7 +7,7 @@ export function About() {
         <>
             <div
                 id="about"
-                className="bg-primary text-secondary px-5 py-20 flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-20"
+                className="bg-primary text-secondary px-5 py-20 flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-20 lg:rounded-b-4xl"
             >
                 {/* SectionIntro and ImageDisplay side by side on larger screens */}
                 <div className="flex-1 self-center">

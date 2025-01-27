@@ -7,7 +7,7 @@ export function SectionIntro({ header, name, text = "" }) {
                     {name}
                 </div>
                 {text === "" ? null : (
-                    <div className="text-lg lg:text-2xl font-roboto leading-relaxed">
+                    <div className="text-lg lg:text-xl font-roboto leading-relaxed">
                         {text}
                     </div>
                 )}
