@@ -1,11 +1,18 @@
-import back from '/health.avif'
+import back from '/nursePscy.avif'
 import { Button } from './helper/Button'
 export function Hero(){
+
+    function toContact(){
+        const contactSection = document.getElementById("contact")
+        contactSection ? contactSection.scrollIntoView({behavior:"smooth"}) : null;
+    }
+    
     return (
+
         <>
             <div className="bg-secondary">
                 <div className="">
-                    <img src={back} alt="background" className="w-screen h-72" />
+                    <img src={back} alt="background" className="w-screen h-92" />
                 </div>
                 <div className=" text-primary px-5 flex flex-col gap-4 py-20">
                     <div className="font-lora text-3xl">Discover Quality Care</div>
@@ -13,7 +20,7 @@ export function Hero(){
                     <div className="font-roboto text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ducimus earum quisquam facilis sint nesciunt iste maiores laborum quibusdam eligendi atque sequi, quasi doloremque adipisci fugiat dicta rem at hic!</div>
                     
                     <div className="mt-10" >
-                        <a href="#contact">
+                        <a onClick={()=>{toContact()}}>
                             <Button text='Contact Us' bg='bg-primary' color='text-secondary' width='w-52' fntSize='text-2xl' action={true} />
                         </a>
                     </div>
