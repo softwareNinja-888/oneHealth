@@ -8,9 +8,9 @@ import surgery from '/surgery.avif'
 export function Services(){
     return (
         <>
-            <div className="bg-otherLight px-5 py-9 flex flex-col gap-3">
-                <Button text="Our Services" bg="red-700" color="primary" />
-                <div className="font-lora text-3xl mb-10">Discover Our Services</div>
+            <div className="bg-otherLight px-5 py-20 flex flex-col gap-10">
+                <Button text="Our Services" bg="bg-primary" color="text-secondary" fntSize="text-xl" width="w-52"  />
+                <div className="font-lora text-3xl">Discover Our Services</div>
                 <div className="flex flex-col gap-16">
                     <ServiceCard img={health} color="otherPurple" service="Personalised Care" description="Tailored to Your Needs"/>
                     <ServiceCard img={care} color="secondary" service="Skilled Nursing" description="Professional Medical Assitance"/>
