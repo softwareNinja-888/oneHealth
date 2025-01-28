@@ -16,7 +16,7 @@ export function FormFooter(){
     };
   
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-10/12 m-auto  text-secondary">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-10/12 lg:w-[420px] m-auto  text-secondary">
 
             {/* FIRST NAME  */}
 

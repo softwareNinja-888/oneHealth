@@ -1,4 +1,4 @@
-import back from '/nursePscy.avif'
+import back from '/nurse2.avif'
 import { Button } from './helper/Button'
 export function Hero(){
 
@@ -12,7 +12,7 @@ export function Hero(){
         <>
             <div className="bg-secondary mt-32">
                 <div className="">
-                    <img src={back} alt="background" className="w-screen h-92" />
+                    <img src={back} alt="background" className="w-screen size-auto" />
                 </div>
                 <div className=" text-primary px-5 flex flex-col gap-4 py-20">
                     <div className="font-lora text-3xl">Discover Quality Care</div>

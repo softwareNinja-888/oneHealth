@@ -2,8 +2,8 @@ import { Button } from "./helper/Button";
 import { ServiceCard } from "./helper/ServiceCard";
 
 import health from '/health.avif'
-import care from '/care.avif'
-import surgery from '/surgery.avif'
+import care from '/nursePscy.avif'
+import surgery from '/maleNurse.avif'
 import { SectionIntro } from "./helper/SectionIntro";
 
 export function Services(){
@@ -13,7 +13,7 @@ export function Services(){
                 <div className="text-primary ">
                     <SectionIntro header={<Button text="Our Services" bg="bg-primary" color="text-secondary" fntSize="text-xl" width="w-52"  />} name='Discover Our Service'/>
                 </div>
-                <div className="flex flex-col gap-16 lg:grid lg:grid-cols-3 lg:grid-rows-1 ">
+                <div className="flex flex-col gap-16 lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-10">
                     <ServiceCard img={health} color="otherPurple" service="Personalised Care" description="Tailored to Your Needs"/>
                     <ServiceCard img={care} color="secondary" service="Skilled Nursing" description="Professional Medical Assitance" middle={true}/>
                     <ServiceCard img={surgery} color="primary" service="Therapy Services " description="Rehabilitation and Support"/>
