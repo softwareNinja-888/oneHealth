@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 export function FormFooter(){
     const [email, setEmail] = useState("");
     const [subscribed, setSubscribed] = useState(false);
@@ -38,7 +39,7 @@ export function FormFooter(){
                 Last Name *
             </label>
             <input
-              type="email"
+              type="text"
               id="lastName"
               value={lastName}
               onChange={(e) => setlastName(e.target.value)}

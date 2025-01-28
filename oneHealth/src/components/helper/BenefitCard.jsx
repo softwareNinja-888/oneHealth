@@ -7,8 +7,8 @@ export function BenefitCard({img,color,name,text,position="items-start"}){
 
     return (
         <>
-            <div className={`flex flex-col lg:flex-row ${direction} lg:px-10 lg:gap-30 gap-10 lg:items-center lg:justify-center md:${position}`}>
-                <div className={`flex justify-center w-28 h-28 ${color} px-3 rounded-full p-6  lg:h-32 lg:max-w-[40%] `}>
+            <div className={`flex flex-col lg:flex-row ${direction} lg:px-10 lg:gap-30 gap-10 lg:items-center lg:justify-center ${position}`}>
+                <div className={`flex justify-center w-28 h-28 ${color} px-3 rounded-full p-6  lg:h-32 lg:max-w-[20%] lg:min-w-[11%] `}>
                     <img src={img} alt="charity hands" className="" />
                 </div>
                 <div className={`flex  flex-col gap-4 ${color} text-primary px-4 py-10 rounded-4xl lg:w-[55%] `}>
