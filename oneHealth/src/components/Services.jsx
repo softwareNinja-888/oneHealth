@@ -4,16 +4,18 @@ import { ServiceCard } from "./helper/ServiceCard";
 import health from '/health.avif'
 import care from '/care.avif'
 import surgery from '/surgery.avif'
+import { SectionIntro } from "./helper/SectionIntro";
 
 export function Services(){
     return (
         <>
-            <div id="services" className="bg-otherLight px-5 py-20 flex flex-col gap-10">
-                <Button text="Our Services" bg="bg-primary" color="text-secondary" fntSize="text-xl" width="w-52"  />
-                <div className="font-lora text-3xl">Discover Our Services</div>
-                <div className="flex flex-col gap-16">
+            <div id="services" className="bg-otherLight px-5 py-20 flex flex-col gap-32">
+                <div className="text-primary ">
+                    <SectionIntro header={<Button text="Our Services" bg="bg-primary" color="text-secondary" fntSize="text-xl" width="w-52"  />} name='Discover Our Service'/>
+                </div>
+                <div className="flex flex-col gap-16 lg:grid lg:grid-cols-3 lg:grid-rows-1 ">
                     <ServiceCard img={health} color="otherPurple" service="Personalised Care" description="Tailored to Your Needs"/>
-                    <ServiceCard img={care} color="secondary" service="Skilled Nursing" description="Professional Medical Assitance"/>
+                    <ServiceCard img={care} color="secondary" service="Skilled Nursing" description="Professional Medical Assitance" middle={true}/>
                     <ServiceCard img={surgery} color="primary" service="Therapy Services " description="Rehabilitation and Support"/>
                 </div>
 
