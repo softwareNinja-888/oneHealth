@@ -8,11 +8,16 @@ import { Team } from "./components/Team"
 import { Testimonials } from "./components/Testimonials"
 import { Footer } from "./components/Footer"
 import { ScrollToTop } from "./components/helper/ScrollToTop"
+import {HeaderNew} from './components/hero-section.jsx'
+import {HeroPlay} from './components/HeroPlay.jsx'
+
 function App() {
  
   return (
     <>
       <div className="">
+        {/*<HeaderNew/>*/}
+        {/*<HeroPlay/>*/}
         <Header/>
         <Hero/>
         <About/>

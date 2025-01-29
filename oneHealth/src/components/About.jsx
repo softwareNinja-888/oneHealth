@@ -3,11 +3,14 @@ import { ImageDisplay } from "./helper/ImageDisplay";
 import { SectionIntro } from "./helper/SectionIntro";
 
 export function About() {
+    const aboutText = 'At One Health, we bring exceptional healthcare to you. Whether you’re managing a chronic condition, recovering from an injury, or simply need personalized care, our team provides tailored treatments and unwavering support—right in the comfort of your home. Your health, your home, our priority.'
+
+
     return (
         <>
             <div
                 id="about"
-                className="bg-primary text-secondary px-5 py-20 flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-20 lg:rounded-b-4xl"
+                className="bg-primary text-secondary px-5 py-20 flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-20 "
             >
                 {/* SectionIntro and ImageDisplay side by side on larger screens */}
                 <div className="flex-1 self-center">
@@ -22,7 +25,7 @@ export function About() {
                             />
                         }
                         name="Passion-Driven Care, Delivered to Your Door"
-                        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi saepe consequuntur voluptatum quod voluptatem est exercitationem atque assumenda neque. Adipisci corrupti saepe perferendis architecto voluptates assumenda autem tempora laboriosam tempore!"
+                        text={aboutText}
                     />
                 </div>
 

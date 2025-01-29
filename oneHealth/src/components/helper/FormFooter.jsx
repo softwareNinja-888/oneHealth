@@ -75,7 +75,7 @@ export function FormFooter(){
 
             <button
               type="submit"
-              className="w-full mt-3 bg-secondary text-primary py-2 font-lora"
+              className="w-full mt-3 bg-secondary text-primary py-2 font-lora cursor-pointer"
             >
              Submit
             </button>
