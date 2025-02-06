@@ -48,15 +48,13 @@ To set up this project locally:
 	```bash
 	npm run dev
 	```
-The application will be accessible at http://localhost:3000.
+The application will be accessible at: https://one-health-three.vercel.app/.
 
 ## Usage
 This template serves as a foundation for creating customized landing pages. You can modify the components and styling to align with specific client requirements. Key areas to consider:
 
-Content: Update text and media to reflect the client's brand and messaging.
-Styling: Adjust colors, fonts, and layouts to match the desired aesthetic.
-Functionality: Integrate additional features such as contact forms, analytics, or interactive elements as needed.
-Contributing
+
+## Contributing
 Contributions are welcome! If you have suggestions for improvements or encounter any issues, please open an issue or submit a pull request.
 
 License
@@ -66,5 +64,5 @@ Contact
 For inquiries or freelance opportunities, please reach out:
 
 Email: mlandvodlamini03@gmail.com
-LinkedIn: Your LinkedIn Profile
+LinkedIn: TBA
 Portfolio: TBA
