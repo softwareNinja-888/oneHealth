@@ -38,15 +38,19 @@ To set up this project locally:
    ```bash
    git clone https://github.com/yourusername/one-health-landing-page.git
    cd one-health-landing-page
-Install Dependencies: Ensure you have Node.js installed. Then, run:
+   ```
+2. **Install Dependencies: Ensure you have Node.js installed. Then, run**:
+	```bash
+	npm install
+	```
 
-npm install
-Start the Development Server:
-
-npm run dev
+3. **Start the Development Server**:
+	```bash
+	npm run dev
+	```
 The application will be accessible at http://localhost:3000.
 
-Usage
+## Usage
 This template serves as a foundation for creating customized landing pages. You can modify the components and styling to align with specific client requirements. Key areas to consider:
 
 Content: Update text and media to reflect the client's brand and messaging.
@@ -61,10 +65,6 @@ This project is licensed under the MIT License.
 Contact
 For inquiries or freelance opportunities, please reach out:
 
-Email: your.email@example.com
+Email: mlandvodlamini03@gmail.com
 LinkedIn: Your LinkedIn Profile
-Portfolio: Your Portfolio Website
-Note: Replace placeholder links and contact information with your actual details.
-
-
-This README template is structured to provide a comprehensive overview of your project, highlighting its features, technologies used, and instructions for setup and usage. It also includes sections for contributions, licensing, and your contact information, which are essential for open-source projects and potential clients.
+Portfolio: TBA
