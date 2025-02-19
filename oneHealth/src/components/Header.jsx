@@ -4,6 +4,8 @@ import '../index.css';
 import menu from '/ui/menu.avif';
 import { Button } from './helper/Button';
 
+import logo from '/nlogo.avif'
+
 export function Header() {
    const [menuOpen, setMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -30,24 +32,24 @@ export function Header() {
       <div className="relative">
         <div className="absolute inset-0 bg-cover bg-center opacity-50 hidden lg:block" 
              style={{ backgroundImage: "url('/ui/menu.avif')" }} />
-        <div className="relative bg-primary/90 lg:bg-primary/80 shadow-md px-4 md:px-8 lg:px-16 py-4 lg:py-6">
+        <div className="relative bg-[#0d5d40] shadow-md px-4 md:px-8 lg:px-16 py-4 lg:py-6">
           <div className="flex justify-between items-center max-w-7xl mx-auto">
             <a href="#" className="z-10">
-              <Button text='One Health' bg="bg-secondary" color="text-primary" />
+              <img src={logo} alt="" className="w-32"/>
             </a>
             <div className="lg:hidden">
               <button onClick={() => setMenuOpen(!menuOpen)} className="w-8 h-8">
                 <img src="/ui/menu.avif" className="w-5" alt="menu" />
               </button>
             </div>
-            <nav className="hidden lg:flex space-x-8">
-                <div onClick={()=>{toSection('home')}} className="cursor-pointer text-secondary hover:text-secondary/80 hover:underline">Home</div>
-                <div onClick={()=>{toSection('about')}}  className="cursor-pointer text-secondary hover:text-secondary/80 hover:underline">About</div>
-                <div onClick={()=>{toSection('services')}}  className="cursor-pointer text-secondary hover:text-secondary/80 hover:underline">Services</div>
-                <div onClick={()=>{toSection('benefits')}} className="cursor-pointer text-secondary hover:text-secondary/80 hover:underline">Benefits</div>
-                <div onClick={()=>{toSection('team')}} className="cursor-pointer text-secondary hover:text-secondary/80 hover:underline">Team</div>  
-                <div onClick={()=>{toSection('testimonials')}} className="cursor-pointer text-secondary hover:text-secondary/80 hover:underline">Testimonials</div>
-                <div onClick={()=>{toSection('contact')}}  className="cursor-pointer text-secondary hover:text-secondary/80 hover:underline">Contact</div>
+            <nav className="hidden lg:flex space-x-16">
+                <div onClick={()=>{toSection('home')}} className="no-underline relative cursor-pointer after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-secondary text-base max-[500px]:text-xs text-secondary ">Home</div>
+               <div onClick={()=>{toSection('about')}}  className="flex gap-1.5 no-underline relative cursor-pointer  after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-secondary text-base max-[500px]:text-xs text-secondary ">About</div>
+                <div onClick={()=>{toSection('services')}}  className="flex gap-1.5 no-underline relative cursor-pointer  after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-secondary text-base max-[500px]:text-xs text-secondary ">Services</div>
+                <div onClick={()=>{toSection('benefits')}} className="flex gap-1.5 no-underline relative cursor-pointer  after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-secondary text-base max-[500px]:text-xs text-secondary ">Benefits</div>
+                <div onClick={()=>{toSection('team')}} className="flex gap-1.5 no-underline relative cursor-pointer  after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-secondary text-base max-[500px]:text-xs text-secondary ">Team</div>  
+                <div onClick={()=>{toSection('testimonials')}} className="flex gap-1.5 no-underline relative cursor-pointer  after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-secondary text-base max-[500px]:text-xs text-secondary ">Testimonials</div>
+                <div onClick={()=>{toSection('contact')}}  className="flex gap-1.5 no-underline relative cursor-pointer  after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-300 after:ease-in-out hover:after:opacity-100 hover:after:bg-secondary text-base max-[500px]:text-xs text-secondary ">Contact</div>
 
             </nav>
           </div>

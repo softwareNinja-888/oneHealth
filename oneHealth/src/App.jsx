@@ -17,9 +17,9 @@ function App() {
     <>
       <div className="">
         {/*<HeaderNew/>*/}
-        {/*<HeroPlay/>*/}
         <Header/>
         <Hero/>
+        {/*<HeroPlay/>*/}
         <About/>
         <Services/>
         <Benefits/>
