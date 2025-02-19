@@ -1,5 +1,7 @@
 import back from '/maleNurse.avif';
+
 import { Button } from './helper/Button';
+import { AnimatedButton } from './helper/AnimatedButton';
 import { Helmet } from 'react-helmet';
 
 export function Hero() {
@@ -50,15 +52,12 @@ export function Hero() {
               </p>
 
               <div className="pt-8">
-                <button onClick={toContact} className="cursor-pointer">
-                  <Button 
-                    text='Get Started' 
-                    bg='bg-primary' 
+                <button onClick={toContact} className="cursor-pointer ">
+                  <AnimatedButton  bg='bg-primary' 
                     color='text-secondary' 
                     width='w-52' 
-                    fntSize='text-2xl' 
-                    action={true} 
-                  />
+                    fntSize='text-2xl' text='Get Started' />
+
                 </button>
               </div>
 
